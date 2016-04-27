@@ -31,258 +31,201 @@
 
     <div class="row">
     <!--Panel Inicio del menu vertical, lateral izq -->
-      <div class="col-xs-3 well">
+      <div class="col-sm-3 well">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">Menu Principal</h3>
-          </div>
+          </div><!--div-panel-heading-->
 
           <div class="panel-body">
-            <ul class="nav nav-pills nav-stacked">
-            <!--<ul class="nav nav-pills nav-stacked">-->
-              <li role="presentation" class="active"><a href="#">Inicio</a></li>
-              <li role="presentation"><a href="#collapseMenu" data-toggle="collapse"  aria-expanded="false" aria-controls="collapseExample">Solicitudes<span class="caret"></span></a></li>  
-              <ul class="collapse" id="collapseMenu">
-                <li><a href="newService.html">Registrar</a></li>
-                <li><a href="#">Consultar</a></li>
-              <!--<li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solicitudes<span class="caret"></span></a>
-              
-                <ul class="dropdown-menu">
-                  <li><a href="#">Registrar</a></li>
-                  <li><a href="#">Consultar</a></li>
-                </ul>
-              </li>-->  
-              </ul>              
-                
-              <li role="presentation"><a href="#">Actualizar Datos</a></li>
-              <li role="presentation"><a href="#CollapseMenu3" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample3">Registrar<span class="caret"></span></a></li>
-                <ul class="collapse" id="CollapseMenu3">
-                   <li><a href="nuevoCSA.html">Nuevo CSA</a></li>
-                   <li><a href="nuevoTecnico.html">Nuevo Tecnico</a></li>
-                   <li><a href="nuevoUser.html">Nuevo usuario</a></li>
-                </ul>
-              <li role="presentation"><a href="#CollapseMenu2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample2">Consultar<span class="caret"></span></a></li>
-                <ul class="collapse" id="CollapseMenu2">
-                   <li><a href="consultaSolicitud.html">Solicitud de cliente</a></li>
-                   <li><a href="consultaRepuestos.html">Solicitud de Repuesto</a></li>
-                   <li><a href="consultaSolicitudCSA.html">Solicitudes asignada a CSA</a></li>
-                </ul>
-              <li role="presentation"><a href="visitasconfirmadas.html">Gestionar Visitas</a></li>
-              <li role="presentation"><a href="Solicitudrepuesto.html">Gestionar Repuestos</a></li>
-              <li role="presentation"><a href="estadistica.html">Estadisticas</a></li>
-              <li role="presentation"><a href="#">Salir</a></li>
-            </ul>
-          </div>
-          
-        </div>
+            <div class="sidebar-nav">
+                <div class="navbar navbar-default" role="navigation">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                
+                      <span class="icon-bar"></span>
+                    </button>
+                    <span class="visible-xs navbar-brand">Menu Principal</span>
+                  </div><!--navbar-header-->
         
-      </div>
-      <div class="container">
-      <div class="col-xs-9">
+                    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Inicio</a></li>                
+                        <li role="presentation"><a href="#collapseMenu" data-toggle="collapse"  aria-expanded="false" aria-controls="collapseExample">Solicitudes<span class="caret"></span></a></li>
+                          <ul class="collapse" id="collapseMenu">
+                            <li><a href="newService.html">Registrar</a></li>
+                            <li><a href="consultaServicio.html">Consultar</a></li>              
+                          </ul>
+                        <li role="presentation"><a href="#">Actualizar Datos</a></li>
+                        <li role="presentation"><a href="#CollapseMenu3" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample3">Registrar<span class="caret"></span></a></li>
+                          <ul class="collapse" id="CollapseMenu3">
+                            <li><a href="nuevoCSA.html">Nuevo CSA</a></li>
+                            <li><a href="nuevoTecnico.html">Nuevo Tecnico</a></li>
+                            <li><a href="nuevoUser.html">Nuevo usuario</a></li>
+                          </ul>
+                        <li role="presentation"><a href="#CollapseMenu2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample2">Consultar<span class="caret"></span></a></li>
+                          <ul class="collapse" id="CollapseMenu2">
+                            <li><a href="consultaSolicitud.html">Solicitud de cliente</a></li>
+                            <li><a href="consultaRepuestos.html">Solicitud de Repuesto</a></li>
+                            <li><a href="consultaSolicitudCSA.html">Solicitudes asignada a CSA</a></li>
+                          </ul>
+                        <li role="presentation"><a href="visitasconfirmadas.html">Gestionar Visitas</a></li>
+                        <li role="presentation"><a href="Solicitudrepuesto.html">Gestionar Repuestos</a></li>
+                        <li role="presentation"><a href="estadistica.html">Estadisticas</a></li>
+                        <li role="presentation"><a href="#">Salir</a></li>
+                      </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!--div navbar-->
+              </div><!--side-navbar-->
+          </div><!--div-panel-body-->
+          
+        </div><!--div-panel-default-->
+        
+      </div><!--div col-->
+      <!-- contenido de la web-->
+      <div class="col-sm-9">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title"><strong>Asignacion de Repuestos</strong></h3>
-          </div>          
+          </div><!--div-panel-heading contenido web-->          
           
           <div class="panel-body">
             
-              <form action="..." name="consulservicio">
-              
+              <form action="..." name="consulservicio">              
                 <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="buscarsolicitud"><span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span></span>
+                    <input type="text" class="form-control" placeholder="Ingrese numero de solicitud" aria-describedby="numsolicitud">
+                  </div>                                                                               
+                  <div class="input-group">
+                    <span class="input-group-addon" id="serial"><span class="glyphicon glyphicon glyphicon-barcode" aria-hidden="true"></span></span>
+                    <input type="text" class="form-control" placeholder="Numero de serial" aria-describedby="serial" readonly>                  
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-addon" id="modelo"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
+                    <input type="text" class="form-control" placeholder="Modelo" aria-describedby="modelo" readonly>                             
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-addon" id="marca"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
+                    <input type="text" class="form-control" placeholder="Marca" aria-describedby="marca" readonly>                          
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-addon" id="status"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
+                    <input type="text" class="form-control" placeholder="Estatus de solicitud" aria-describedby="status" readonly>                             
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-addon" id="status"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
+                    <input type="text" class="form-control" placeholder="CSA" aria-describedby="status" readonly>                                              
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-addon" id="status"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
+                    <input type="text" class="form-control" placeholder="Tecnico Asignado" aria-describedby="status" readonly>                          
+                  </div>
                 
-                <div class="input-group">
-                  <span class="input-group-addon" id="buscarsolicitud"><span class="glyphicon glyphicon glyphicon-search" aria-hidden="true"></span></span>
-                  
-                  <input type="text" class="form-control" placeholder="Ingrese numero de solicitud" aria-describedby="numsolicitud">
-
-                </div>                
-                                                               
-                <div class="input-group">
-                  <span class="input-group-addon" id="serial"><span class="glyphicon glyphicon glyphicon-barcode" aria-hidden="true"></span></span>
-                  <input type="text" class="form-control" placeholder="Numero de serial" aria-describedby="serial" readonly>                  
+                <div class="table-responsive">
+                  <table class="table table-hover table-bordered">
+                    <tr>
+                      <th>Serial Repuesto</th>
+                      <th>Descripcion</th>
+                      <th>Marca</th>
+                      <th>Cantidad</th>
+                      <th>Fecha</th>
+                      <th>Disponibilidad</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="text" class="form-control" placeholder="serialrep" aria-describedby="serialrep" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="descripcion" aria-describedby="descripcion" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="marca" aria-describedby="marca" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="cantidad" aria-describedby="cantidad" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="fecha" aria-describedby="fecha" readonly>
+                      </td>
+                      <td>
+                        <select class="form-control" name="numsolicitud" id="CSA" data-toggle="tooltip" data-placement="left" title="CSA">
+                          <option></option>
+                          <option>Si</option>
+                          <option>No</option>                      
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="text" class="form-control" placeholder="serialrep" aria-describedby="serialrep" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="descripcion" aria-describedby="descripcion" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="marca" aria-describedby="marca" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="cantidad" aria-describedby="cantidad" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="fecha" aria-describedby="fecha" readonly>
+                      </td>
+                      <td>
+                        <select class="form-control" name="numsolicitud" id="CSA" data-toggle="tooltip" data-placement="left" title="CSA">
+                          <option></option>
+                          <option>Si</option>
+                          <option>No</option>                      
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="text" class="form-control" placeholder="serialrep" aria-describedby="serialrep" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="descripcion" aria-describedby="descripcion" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="marca" aria-describedby="marca" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="cantidad" aria-describedby="cantidad" readonly>
+                      </td>
+                      <td>
+                        <input type="text" class="form-control" placeholder="fecha" aria-describedby="fecha" readonly>
+                      </td>
+                      <td>
+                        <select class="form-control" name="numsolicitud" id="CSA" data-toggle="tooltip" data-placement="left" title="CSA">
+                          <option></option>
+                          <option>Si</option>
+                          <option>No</option>                      
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                </div><!--div-table-responsive-->       
+              </div><!--div-form-group contenido web-->
+                <hr>
+                <div>
+                  <input class="btn btn-default" type="submit" value="Actualizar">        
+                  <input class="btn btn-default" type="reset" value="Cancelar">
                 </div>
-                <div class="input-group">
-                  <span class="input-group-addon" id="modelo"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
-                  <input type="text" class="form-control" placeholder="Modelo" aria-describedby="modelo" readonly>
-                  <!--<input type="textarea" rows="5" class="form-control" placeholder="Direccion" aria-describedby="direccion">-->                             
-                </div>
-                <div class="input-group">
-                  <span class="input-group-addon" id="marca"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
-                  <input type="text" class="form-control" placeholder="Marca" aria-describedby="marca" readonly>
-                                              
-                </div>
-                <div class="input-group">
-                  <span class="input-group-addon" id="status"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
-                  <input type="text" class="form-control" placeholder="Estatus de solicitud" aria-describedby="status" readonly>
-                                              
-                </div>
 
-                <div class="input-group">
-                  <span class="input-group-addon" id="status"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
-                  <input type="text" class="form-control" placeholder="CSA" aria-describedby="status" readonly>
-                                              
-                </div>
-                <div class="input-group">
-                  <span class="input-group-addon" id="status"><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></span>
-                  <input type="text" class="form-control" placeholder="Tecnico Asignado" aria-describedby="status" readonly>
-                                              
-                </div>
-                
-              <div class="table-responsive">
-                <table class="table table-hover table-bordered">
-                  <tr>
-                    <th>Serial Repuesto</th>
-                    <th>Descripcion</th>
-                    <th>Marca</th>
-                    <th>Cantidad</th>
-                    <th>Fecha</th>
-                    <th>Disponibilidad</th>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input type="text" class="form-control" placeholder="serialrep" aria-describedby="serialrep" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="descripcion" aria-describedby="descripcion" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="marca" aria-describedby="marca" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="cantidad" aria-describedby="cantidad" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="fecha" aria-describedby="fecha" readonly>
-                    </td>
-                    <td>
-                      <select class="form-control" name="numsolicitud" id="CSA" data-toggle="tooltip" data-placement="left" title="CSA">
-                        <option></option>
-                        <option>Si</option>
-                        <option>No</option>
-                                                
-                      </select>
-                    </td>
-                    
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <input type="text" class="form-control" placeholder="serialrep" aria-describedby="serialrep" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="descripcion" aria-describedby="descripcion" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="marca" aria-describedby="marca" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="cantidad" aria-describedby="cantidad" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="fecha" aria-describedby="fecha" readonly>
-                    </td>
-                    <td>
-                      <select class="form-control" name="numsolicitud" id="CSA" data-toggle="tooltip" data-placement="left" title="CSA">
-                        <option></option>
-                        <option>Si</option>
-                        <option>No</option>
-                                                
-                      </select>
-                    </td>
-                    
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <input type="text" class="form-control" placeholder="serialrep" aria-describedby="serialrep" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="descripcion" aria-describedby="descripcion" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="marca" aria-describedby="marca" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="cantidad" aria-describedby="cantidad" readonly>
-                    </td>
-                    <td>
-                      <input type="text" class="form-control" placeholder="fecha" aria-describedby="fecha" readonly>
-                    </td>
-                    <td>
-                      <select class="form-control" name="numsolicitud" id="CSA" data-toggle="tooltip" data-placement="left" title="CSA">
-                        <option></option>
-                        <option>Si</option>
-                        <option>No</option>
-                                                
-                      </select>
-                    </td>
-                    
-                  </tr>
-                </table>
-              </div>             
-
-              </div>
-              
-
-              <hr>
-              <div>
-
-                <input class="btn btn-default" type="submit" value="Actualizar">
-
-              
-              
-                <input class="btn btn-default" type="reset" value="Cancelar">
-              </div>
-
-            </form>
+              </form>
             
-              <!--<form>
-                <div class="row">
-                  <div class="form-group">
-                    <label for="numsolicitud">N° de Solicitud</label>
-                      <select class="form-control" name="numsolicitud" id="numsolicitud" data-toggle="tooltip" data-placement="left" title="Seleccione el numero de solicitud">
-                        <option>1001</option>
-                        <option>1002</option>
-                        <option>1003</option>
-                        <option>1004</option>
-                        <option>1005</option>
-                      </select>
-                  </div>
-                 </div>
-                <div class="row">
-                  <div class="col-xs-3 well">
-                    <div class="form-group">
-                      <label for="numfactura">N° de Factura</label>
-                      <input type="text" class="form-control" id="numfactura" readonly>
-                    </div>
-                  </div>
-                  <div class="col-xs-3 well">
-                    <div class="form-group">
-                      <label for="numfactura">N° de Factura</label>
-                      <input type="text" class="form-control" id="numfactura" readonly>
-                    </div>
-                  </div>
-                  <div class="col-xs-3 well">
-                    <div class="form-group">
-                      <label for="numfactura">N° de Factura</label>
-                      <input type="text" class="form-control" id="numfactura" readonly>
-                    </div>
-                  </div>
-                  
-                  
-                </div>
-            </form>-->
-          </div>
-        </div>
-      </div>
-      </div>
-      <!--COLOCAR AQUI EL DIV-->
-    </div>
+              
+          </div><!-- div-panel-body contenido web-->
+        </div><!--div panel-default contenido web-->
+      </div><!--div-col-contenido web-->      
+    </div><!--div-row-->
   	
     
     
-    </div> 
+  </div><!--div-container--> 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -293,4 +236,3 @@
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-.
